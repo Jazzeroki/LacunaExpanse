@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D59D3A94-060C-408E-A5C9-5EA5CE82EE45}</ProjectGuid>
+    <ProjectGuid>{7ABE1FA0-4C3C-4690-BF22-61029FD61585}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>LacunaExpanse.iOS</RootNamespace>
@@ -88,10 +88,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AkavacheSqliteLinkerOverride.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <None Include="app.config" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,122 +121,33 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Acr.Support.iOS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Acr.Support.1.1.1\lib\Xamarin.iOS10\Acr.Support.iOS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Acr.UserDialogs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Acr.UserDialogs.4.2.1\lib\Xamarin.iOS10\Acr.UserDialogs.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Acr.UserDialogs.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Acr.UserDialogs.4.2.1\lib\Xamarin.iOS10\Acr.UserDialogs.Interface.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Akavache, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\akavache.core.4.1.2\lib\Xamarin.iOS10\Akavache.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Akavache.Sqlite3, Version=4.1.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\akavache.sqlite3.4.1.2\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.Sqlite3.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="BTProgressHUD, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Acr.UserDialogs.4.2.1\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ExtendedEntryControl.Forms.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\detroitpro.Forms.Plugin.ExtendedEntryControl.0.0.13\lib\Xamarin.iOS10\ExtendedEntryControl.Forms.Plugin.Abstractions.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ExtendedEntryControl.Forms.Plugin.iOSUnified, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\detroitpro.Forms.Plugin.ExtendedEntryControl.0.0.13\lib\Xamarin.iOS10\ExtendedEntryControl.Forms.Plugin.iOSUnified.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\modernhttpclient.2.4.2\lib\Xamarin.iOS10\ModernHttpClient.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="PLCrashReporterUnifiedBinding, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Insights.1.11.3\lib\Xamarin.iOS10\PLCrashReporterUnifiedBinding.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Plugin.Connectivity, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xam.Plugin.Connectivity.2.0.2\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Plugin.Connectivity.Abstractions, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xam.Plugin.Connectivity.2.0.2\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Refit, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\refit.2.4.1\lib\Xamarin.iOS10\Refit.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Splat.1.6.2\lib\Xamarin.iOS10\Splat.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SQLitePCL.raw, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\SQLitePCL.raw_basic.0.7.0\lib\Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform.iOS, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Xamarin.Insights, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Xamarin.Insights.1.11.3\lib\Xamarin.iOS10\Xamarin.Insights.dll</HintPath>
+      <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.0.0.6490\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Xamarin.Insights.1.11.3\build\Xamarin.iOS10\Xamarin.Insights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Insights.1.11.3\build\Xamarin.iOS10\Xamarin.Insights.targets'))" />
-    <Error Condition="!Exists('..\..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.0.0.6482\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
   </Target>
-  <Import Project="..\..\packages\Xamarin.Insights.1.11.3\build\Xamarin.iOS10\Xamarin.Insights.targets" Condition="Exists('..\..\packages\Xamarin.Insights.1.11.3\build\Xamarin.iOS10\Xamarin.Insights.targets')" />
-  <Import Project="..\..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets" Condition="Exists('..\..\packages\refit.2.4.1\build\portable-net45+netcore45+wp8+wpa81+monoandroid+xamarin.ios10\refit.targets')" />
 </Project>

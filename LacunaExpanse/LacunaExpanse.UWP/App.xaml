@@ -1,7 +1,8 @@
 ﻿<Application
-    x:Class="LacunaExpanse.WinPhone.App"
+    x:Class="LacunaExpanse.UWP.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:LacunaExpanse.WinPhone">
+    xmlns:local="using:LacunaExpanse.UWP"
+    RequestedTheme="Light">
 
 </Application>
