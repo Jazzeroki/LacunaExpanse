@@ -1,7 +1,11 @@
 ﻿{
   "dependencies": {
+    "Microsoft.Net.Http": "2.2.29",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Xamarin.Forms": "2.0.0.6482"
+    "modernhttpclient": "2.4.2",
+    "Xam.Plugin.Connectivity": "2.0.2",
+    "Xamarin.Forms": "2.0.1.6505",
+    "Xamarin.Insights": "1.11.4"
   },
   "frameworks": {
     "uap10.0": {}
