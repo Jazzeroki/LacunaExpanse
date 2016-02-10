@@ -36,9 +36,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="MVVM\ObservableObject.cs" />
+    <Compile Include="MVVM\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\modernhttpclient.2.4.2\lib\Portable-Net45+WinRT45+WP8+WPA81\ModernHttpClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Plugin.Connectivity, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.Connectivity.2.0.2\lib\portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Connectivity.dll</HintPath>
       <Private>True</Private>
@@ -46,6 +52,10 @@
     <Reference Include="Plugin.Connectivity.Abstractions, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.Connectivity.2.0.2\lib\portable-net45+wp80+wp81+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Connectivity.Abstractions.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="PropertyChanged, Version=1.50.3.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PropertyChanged.Fody.1.50.3\Lib\portable-net4+sl4+wp8+win8+wpa81+MonoAndroid16+MonoTouch40\PropertyChanged.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll</HintPath>
@@ -78,6 +88,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BaseServices\" />
+    <Folder Include="CustomRenderers\" />
+    <Folder Include="ViewCellModels\" />
+    <Folder Include="ViewCells\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

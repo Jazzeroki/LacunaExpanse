@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Xamarin;
 
 namespace LacunaExpanse.iOS
 {
@@ -23,6 +24,7 @@ namespace LacunaExpanse.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init();
+			Insights.Initialize("5b243cb723e5b05157176fca5c95856f6877699a");
 			LoadApplication(new App());
 
 			return base.FinishedLaunching(app, options);

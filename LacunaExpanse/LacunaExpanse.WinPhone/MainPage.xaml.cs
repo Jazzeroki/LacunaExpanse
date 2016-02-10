@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Xamarin;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -27,7 +28,7 @@ namespace LacunaExpanse.WinPhone
 			this.InitializeComponent();
 
 			this.NavigationCacheMode = NavigationCacheMode.Required;
-
+			Insights.Initialize("5b243cb723e5b05157176fca5c95856f6877699a");
 			LoadApplication(new LacunaExpanse.App());
 		}
 
