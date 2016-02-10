@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2454B06C-C916-4388-A8F1-635BD447CBC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LacunaExpanseAPIWrapper</RootNamespace>
+    <AssemblyName>LacunaExpanseAPIWrapper</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <ReleaseVersion>0.6</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Alliance.cs" />
+    <Compile Include="Archaeology.cs" />
+    <Compile Include="BlackHoleGenerator.cs" />
+    <Compile Include="Body.cs" />
+    <Compile Include="Buildings.cs" />
+    <Compile Include="Capital.cs" />
+    <Compile Include="Captcha.cs" />
+    <Compile Include="CaptchaResponse.cs" />
+    <Compile Include="CoreClass.cs" />
+    <Compile Include="Development.cs" />
+    <Compile Include="Embassy.cs" />
+    <Compile Include="Empire.cs" />
+    <Compile Include="GeneticsLab.cs" />
+    <Compile Include="Inbox.cs" />
+    <Compile Include="Intelligence.cs" />
+    <Compile Include="LibraryOfJith.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MercenaryGuild.cs" />
+    <Compile Include="MiningMinistry.cs" />
+    <Compile Include="Modules.cs" />
+    <Compile Include="Observatory.cs" />
+    <Compile Include="OracleOfAnid.cs" />
+    <Compile Include="ParamsModels\BuildingArrangement.cs" />
+    <Compile Include="ParamsModels\OptionsLists.cs" />
+    <Compile Include="ParamsModels\ParliamentProposalsModel.cs" />
+    <Compile Include="Parliament.cs" />
+    <Compile Include="PoliceStation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseModels\AssignedTo.cs" />
+    <Compile Include="ResponseModels\Available.cs" />
+    <Compile Include="ResponseModels\Bodies.cs" />
+    <Compile Include="ResponseModels\Body.cs" />
+    <Compile Include="ResponseModels\Building.cs" />
+    <Compile Include="ResponseModels\Data.cs" />
+    <Compile Include="ResponseModels\DockedShips.cs" />
+    <Compile Include="ResponseModels\Empire.cs" />
+    <Compile Include="ResponseModels\Empires.cs" />
+    <Compile Include="ResponseModels\Error.cs" />
+    <Compile Include="ResponseModels\Excavators.cs" />
+    <Compile Include="ResponseModels\Glyph.cs" />
+    <Compile Include="ResponseModels\Incoming.cs" />
+    <Compile Include="ResponseModels\IncomingShips.cs" />
+    <Compile Include="ResponseModels\Laws.cs" />
+    <Compile Include="ResponseModels\LevelCosts.cs" />
+    <Compile Include="ResponseModels\MakePlan.cs" />
+    <Compile Include="ResponseModels\Members.cs" />
+    <Compile Include="ResponseModels\Messages.cs" />
+    <Compile Include="ResponseModels\Mission.cs" />
+    <Compile Include="ResponseModels\MissionCount.cs" />
+    <Compile Include="ResponseModels\Orbiting.cs" />
+    <Compile Include="ResponseModels\Ore.cs" />
+    <Compile Include="ResponseModels\PendingBuild.cs" />
+    <Compile Include="ResponseModels\PossibleAssignments.cs" />
+    <Compile Include="ResponseModels\Prisoner.cs" />
+    <Compile Include="ResponseModels\Profile.cs" />
+    <Compile Include="ResponseModels\ProposedBy.cs" />
+    <Compile Include="ResponseModels\Propositions.cs" />
+    <Compile Include="ResponseModels\Response.cs" />
+    <Compile Include="ResponseModels\Result.cs" />
+    <Compile Include="ResponseModels\Server.cs" />
+    <Compile Include="ResponseModels\Ship.cs" />
+    <Compile Include="ResponseModels\ShipsBuilding.cs" />
+    <Compile Include="ResponseModels\SpaceStations.cs" />
+    <Compile Include="ResponseModels\Spies.cs" />
+    <Compile Include="ResponseModels\Stars.cs" />
+    <Compile Include="ResponseModels\Station.cs" />
+    <Compile Include="ResponseModels\Status.cs" />
+    <Compile Include="ResponseModels\TaskOptions.cs" />
+    <Compile Include="ResponseModels\Tasks.cs" />
+    <Compile Include="ResponseModels\Types.cs" />
+    <Compile Include="ResponseModels\Unavailable.cs" />
+    <Compile Include="ResponseModels\Work.cs" />
+    <Compile Include="Security.cs" />
+    <Compile Include="Shipyard.cs" />
+    <Compile Include="Spaceport.cs" />
+    <Compile Include="SpaceStationLab.cs" />
+    <Compile Include="StarMapJson\Alliances.cs" />
+    <Compile Include="StarMapJson\Bounds.cs" />
+    <Compile Include="StarMapJson\Data.cs" />
+    <Compile Include="StarMapJson\Info.cs" />
+    <Compile Include="StarMapJson\Map.cs" />
+    <Compile Include="StarMapJson\StarMapJson.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="TempleOfTheDrajites.cs" />
+    <Compile Include="TheDillonForge.cs" />
+    <Compile Include="Trade.cs" />
+    <Compile Include="Transporter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Connectivity.Plugin, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.1.0.4\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Connectivity.Plugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Connectivity.Plugin.Abstractions, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.1.0.4\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Connectivity.Plugin.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Insights, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Insights.1.11.3\lib\portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10\Xamarin.Insights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.AnalyzerPowerPack.1.0.1\analyzers\dotnet\cs\Microsoft.AnalyzerPowerPack.Common.dll" />
+    <Analyzer Include="..\packages\Microsoft.AnalyzerPowerPack.1.0.1\analyzers\dotnet\cs\Microsoft.AnalyzerPowerPack.CSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HTMLPage1.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Insights.1.11.3\build\portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10\Xamarin.Insights.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Insights.1.11.3\build\portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10\Xamarin.Insights.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Insights.1.11.3\build\portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10\Xamarin.Insights.targets" Condition="Exists('..\packages\Xamarin.Insights.1.11.3\build\portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10\Xamarin.Insights.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
