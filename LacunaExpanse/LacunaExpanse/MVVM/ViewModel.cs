@@ -12,7 +12,7 @@ namespace LacunaExpanse.MVVM
 		public static string PageName { get; set; }
 		public static string PreviousPageName { get; set; }
 
-		protected IUserDialogs dialogService { get { return UserDialogs.Instance; } }
+		//protected IUserDialogs dialogService { get { return UserDialogs.Instance; } }
 
 		string _title;
 		public string Title
