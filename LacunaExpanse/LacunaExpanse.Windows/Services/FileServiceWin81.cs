@@ -13,6 +13,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 using System.Threading.Tasks;
+using Xamarin;
+
 [assembly: Xamarin.Forms.Dependency(typeof(FileServiceWin81))]
 namespace LacunaExpanse.Windows.Services
 {
