@@ -18,12 +18,11 @@ namespace LacunaExpanse.Views.NavigationViews
 			SetBindings();
 			_viewModel = new LoginPageModel(this);
 			BindingContext = _viewModel;
-			//BindingContext = new LoginPageModel(this);
 		}
 
 		private void SetBindings()
 		{
-			empireName.SetBinding(Entry.TextProperty, "Empire");
+			empireName.SetBinding(Entry.TextProperty, "EmpireName");
 			password.SetBinding(Entry.TextProperty, "Password");
 			server.SetBinding(Entry.TextProperty, "Server");
 

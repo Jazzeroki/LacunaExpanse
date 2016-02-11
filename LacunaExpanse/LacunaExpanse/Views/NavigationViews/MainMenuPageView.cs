@@ -11,6 +11,8 @@ namespace LacunaExpanse.Views.NavigationViews
 {
 	public class MainMenuPageView : ContentPage
 	{
+		Label mail = new Label { Text = "Mail" };
+		Label logout = new Label { Text = "Logout" };
 		public MainMenuPageView(NavigationPage navPage)
 		{
 			Title = Constants.APPNAME;
@@ -22,12 +24,18 @@ namespace LacunaExpanse.Views.NavigationViews
 
 		private void SetBindings()
 		{
-			throw new NotImplementedException();
 		}
 
 		private View CreateLayout()
 		{
-			throw new NotImplementedException();
+			var mainLayout = new StackLayout
+			{
+				Children =
+				{
+					mail, logout
+				}
+			};
+			return mainLayout;
 		}
 	}
 }

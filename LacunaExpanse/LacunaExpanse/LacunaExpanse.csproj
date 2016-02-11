@@ -37,7 +37,10 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="BaseServices\IStorageService.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="GameServices\MailServices.cs" />
+    <Compile Include="GameServices\Server.cs" />
+    <Compile Include="GameServices\ServiceModels\ThrottledServerRequest.cs" />
     <Compile Include="MVVM\ObservableObject.cs" />
     <Compile Include="MVVM\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -45,14 +48,20 @@
     <Compile Include="ViewModels\NavigationModels\LoginPageModel.cs" />
     <Compile Include="ViewModels\NavigationModels\MainMenuPageModel.cs" />
     <Compile Include="ViewModels\NavigationModels\MasterCorePageModel.cs" />
+    <Compile Include="ViewModels\NavigationModels\SplashPageModel.cs" />
     <Compile Include="Views\MailViews\MailPageView.cs" />
     <Compile Include="Views\NavigationViews\LoginPageView.cs" />
     <Compile Include="Views\NavigationViews\MainMenuPageView.cs" />
     <Compile Include="Views\NavigationViews\MasterCorePageView.cs" />
+    <Compile Include="Views\NavigationViews\SplashPageView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\modernhttpclient.2.4.2\lib\Portable-Net45+WinRT45+WP8+WPA81\ModernHttpClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Plugin.Connectivity, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -93,6 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
   </ItemGroup>

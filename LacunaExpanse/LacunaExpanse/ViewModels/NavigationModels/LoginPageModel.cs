@@ -1,4 +1,6 @@
-﻿using LacunaExpanse.MVVM;
+﻿using LacunaExpanse.GameServices;
+using LacunaExpanse.MVVM;
+using LacunaExpanseAPIWrapper;
 using PropertyChanged;
 using System;
 using System.Collections.Generic;
@@ -25,11 +27,14 @@ namespace LacunaExpanse.ViewModels.NavigationModels
 		{
 			get
 			{
-				return new Command(() =>
+				return new Command(async () =>
 				{
 					if (!String.IsNullOrEmpty(Server) && !String.IsNullOrEmpty(EmpireName) && !String.IsNullOrEmpty(Password))
 					{
-						//var request = LacunaExpanseAPIWrapper.Empire.Login(1, EmpireName, Password);
+						var request = Empire.Login(1, EmpireName, Password);
+						var server = new Server();
+						var response = await server.GetHttpResultAsync(Server, Empire.url, request);
+						var s = response;
 						//var apiService = new ApiService(Server);
 						//var service = new RefitApiService(apiService);
 						//Login(service, request);
@@ -43,7 +48,7 @@ namespace LacunaExpanse.ViewModels.NavigationModels
 			{
 				return new Command(() =>
 				{
-					//Server = Constants.PTServer;
+					Server = Constants.PTSSERVER;
 				});
 			}
 		}
@@ -53,7 +58,7 @@ namespace LacunaExpanse.ViewModels.NavigationModels
 			{
 				return new Command(() =>
 				{
-					//Server = Constants.US1Server;
+					Server = Constants.US1SERVER;
 				});
 			}
 		}

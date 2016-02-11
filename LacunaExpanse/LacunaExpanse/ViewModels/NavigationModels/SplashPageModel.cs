@@ -1,4 +1,5 @@
 ﻿using LacunaExpanse.MVVM;
+using LacunaExpanse.Views.NavigationViews;
 using PropertyChanged;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,11 @@ namespace LacunaExpanse.ViewModels.NavigationModels
 	{
 		public SplashPageModel(ContentPage page): base(page)
 		{
-
+			AppStart();
+		}
+		private async void AppStart()
+		{
+			await Navigation.PushAsync(new LoginPageView());
 		}
 	}
 }

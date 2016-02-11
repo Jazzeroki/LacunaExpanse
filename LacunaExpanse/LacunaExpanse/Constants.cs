@@ -8,6 +8,8 @@ namespace LacunaExpanse
 {
 	public class Constants
 	{
-		public const string APPNAME = "";
+		public const string APPNAME = "Lacuna Expanse";
+		public const string PTSSERVER = "https://PT.LacunaExpanse.com";
+		public const string US1SERVER = "https://US1.LacunaExpanse.com";
 	}
 }
