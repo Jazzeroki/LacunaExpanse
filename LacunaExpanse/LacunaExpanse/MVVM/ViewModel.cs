@@ -41,7 +41,21 @@ namespace LacunaExpanse.MVVM
 			page.Appearing += page_Appearing;
 		}
 
-		void page_Appearing(object sender, EventArgs e)
+		public static MasterDetailPage DetailPage;
+		public static bool MasterDetailPresented
+		{
+			get { return DetailPage.IsPresented; }
+			set
+			{
+				DetailPage.IsPresented = value;
+			}
+		}
+		public ViewModel(MasterDetailPage page)
+		{
+			DetailPage = page;
+		}
+
+			void page_Appearing(object sender, EventArgs e)
 		{
 			PreviousPageName = PageName;
 			PageName = Page.GetType().Name;
