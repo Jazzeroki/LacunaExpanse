@@ -37,9 +37,18 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="BaseServices\IStorageService.cs" />
+    <Compile Include="GameServices\MailServices.cs" />
     <Compile Include="MVVM\ObservableObject.cs" />
     <Compile Include="MVVM\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\MailModels\MailPageModel.cs" />
+    <Compile Include="ViewModels\NavigationModels\LoginPageModel.cs" />
+    <Compile Include="ViewModels\NavigationModels\MainMenuPageModel.cs" />
+    <Compile Include="ViewModels\NavigationModels\MasterCorePageModel.cs" />
+    <Compile Include="Views\MailViews\MailPageView.cs" />
+    <Compile Include="Views\NavigationViews\LoginPageView.cs" />
+    <Compile Include="Views\NavigationViews\MainMenuPageView.cs" />
+    <Compile Include="Views\NavigationViews\MasterCorePageView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -92,10 +101,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderers\" />
+    <Folder Include="StylesHolder\" />
     <Folder Include="ViewCellModels\" />
     <Folder Include="ViewCells\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LacunaExpanseAPIWrapper\LacunaExpanseAPIWrapper.csproj">

@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace LacunaExpanse.Views.NavigationViews
 {
-	public class MasterCorePage : ContentPage
+	public class MasterCorePageView : ContentPage
 	{
-		public MasterCorePage()
+		public MasterCorePageView()
 		{
 			Content = new StackLayout
 			{
