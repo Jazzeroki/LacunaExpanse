@@ -13,7 +13,7 @@ namespace LacunaExpanse.Views.NavigationViews
 	{
 		public MainMenuPageView(NavigationPage navPage)
 		{
-			Title = "Lacuna Expanse";
+			Title = Constants.APPNAME;
 			NavigationPage.SetHasNavigationBar(this, false);
 			Content = CreateLayout();
 			BindingContext = new MainMenuPageModel(this, navPage);
