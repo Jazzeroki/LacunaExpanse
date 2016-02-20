@@ -18,7 +18,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>LacunaExpanse</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.LacunaExpanse</string>
+	<string>com.RedOrionJazzDevStudio.LacunaExpanse</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
@@ -27,5 +27,7 @@
 	<string>Resources/Images.xcassets/LaunchImage.launchimage</string>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>UIStatusBarHidden</key>
+	<true/>
 </dict>
 </plist>
