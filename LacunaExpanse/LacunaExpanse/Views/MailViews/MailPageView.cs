@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace LacunaExpanse.Views.MailViews
 {
-	class MailPageView
+	public class MailPageView : ContentPage
 	{
+		public MailPageView()
+		{
+
+		}
 	}
 }
